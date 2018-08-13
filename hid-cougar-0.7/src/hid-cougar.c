@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- *  HID driver for Cougar 500k Gaming Keyboard
+ *  HID driver for Cougar 700k Gaming Keyboard
  *
  *  Copyright (c) 2018 Daniel M. Lambea <dmlambea@gmail.com>
  *
@@ -16,7 +16,7 @@
 #include <linux/module.h>
 
 MODULE_AUTHOR("Daniel M. Lambea <dmlambea@gmail.com>");
-MODULE_DESCRIPTION("Cougar 500k Gaming Keyboard");
+MODULE_DESCRIPTION("Cougar 700k Gaming Keyboard");
 MODULE_LICENSE("GPL");
 MODULE_INFO(key_mappings, "G1-G6 are mapped to F13-F18");
 
@@ -26,7 +26,7 @@ MODULE_PARM_DESC(g6_is_space,
 	"If set, G6 programmable key sends SPACE instead of F18 (0=off, 1=on) (default=1)");
 
 #define USB_VENDOR_ID_SOLID_YEAR			0x060b
-#define USB_DEVICE_ID_COUGAR_500K_GAMING_KEYBOARD	0x500a
+#define USB_DEVICE_ID_COUGAR_700K_GAMING_KEYBOARD	0x700a
 
 #define COUGAR_VENDOR_USAGE	0xff00ff00
 
@@ -326,7 +326,7 @@ static void cougar_remove(struct hid_device *hdev)
 
 static struct hid_device_id cougar_id_table[] = {
 	{ HID_USB_DEVICE(USB_VENDOR_ID_SOLID_YEAR,
-			 USB_DEVICE_ID_COUGAR_500K_GAMING_KEYBOARD) },
+			 USB_DEVICE_ID_COUGAR_700K_GAMING_KEYBOARD) },
 	{}
 };
 MODULE_DEVICE_TABLE(hid, cougar_id_table);
