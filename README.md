@@ -7,7 +7,7 @@ This driver solves the bug described here: https://bugs.launchpad.net/ubuntu/+so
 # Installation and usage
 
 Copy hid-cougar-0.7 to /usr/src.
-# cp -rf hid-cougar-0.7 /usr/src
+$ cp -rf hid-cougar-0.7 /usr/src
 
 Then use dkms to install the driver
-# dkms install hid-cougar/0.7
+$ dkms install hid-cougar/0.7
