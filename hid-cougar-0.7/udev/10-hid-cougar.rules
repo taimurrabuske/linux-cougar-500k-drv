@@ -3,4 +3,4 @@
 
 ACTION=="add", KERNEL=="*:060B:500A.*", SUBSYSTEM=="hid", DRIVER=="hid-generic", \
         RUN+="/bin/sh -c 'echo $kernel > /sys/bus/hid/drivers/hid-generic/unbind'", \
-        RUN+="/bin/sh -c 'echo $kernel > /sys/bus/hid/drivers/hid-cougar/bind'"
+        RUN+="/bin/sh -c 'echo $kernel > /sys/bus/hid/drivers/cougar/bind'"
